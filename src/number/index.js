@@ -1,4 +1,4 @@
-export function getPrecision(value){
+function getPrecision(value){
     const valueString = value.toString()
     //取e-后字符转换成int,e-10=>10
     if (valueString.indexOf('e-') >= 0) {
@@ -12,4 +12,8 @@ export function getPrecision(value){
     }
     //否则0
     return precision
+}
+
+export default {
+    getPrecision
 }
