@@ -50,5 +50,6 @@ export function test(url, data, result){
 export default {
 	fetch,
 	get,
-	post
+	post,
+	test
 }
