@@ -38,6 +38,13 @@ export function post(url, data, headers ){
 	
 }
 
+export function test(url, data, result){
+	return new Promise((resolve, reject) =>{
+		setTimeout(()=>{
+			resolve(result)
+		},0)
+	})
+}
 
 
 export default {
